@@ -1,0 +1,63 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+a {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(197, 190, 190);
+}
+
+.navbar {
+    background-color: rgb(232, 238, 247);
+    height: 10vh;
+    width: 100%;
+    color: rgb(75, 75, 75);
+    padding-left: 4vw;
+}
+
+.navbar-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    width: 80%;
+}
+
+#searchbar {
+    width: 35%;
+    height: 4vh;
+    border-radius: 4vh;
+    border: 1px #ffffff solid;
+    padding: 2vh;
+}
+
+.searchbar-submit {
+    position: absolute;
+    background-color: black;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(232, 238, 247);
+    min-width: 8vw;
+    box-shadow: 0px 4px 12px 0px rgb(232, 238, 247);
+    border-radius: 1vh;
+    padding: 1vh 1vw;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
