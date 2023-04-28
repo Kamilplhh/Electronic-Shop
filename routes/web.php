@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [CategoryController::class, 'GetCategory']);
+Route::get('/', [HomeController::class, 'GetData']);
+
+Route::get('cart', [HomeController::class, 'cart'])->name('cart');
+Route::get('add-to-cart/{id}', [HomeController::class, 'addToCart'])->name('add_to_cart');
+Route::delete('/remove-from-cart/{id}', [HomeController::class, 'remove'])->name('remove_from_cart');
