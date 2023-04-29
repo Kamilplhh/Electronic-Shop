@@ -11,7 +11,7 @@ class HomeController extends Controller
     public function GetData() {
         
         $categories = Category::All();
-        $products = Product::All();
+        $products = Product::take(20)->get();
         
         return view('home', compact(['categories', 'products']));
     }

@@ -16,11 +16,11 @@
         @if(session('cart'))
         @foreach(session('cart') as $id => $cart)
         @php $total += $cart['price'] * $cart['quantity'] @endphp
-        <tr style="height: 20vh;">
+        <tr style="height: 22vh;">
             <td>
                 <div class="row">
-                    <div style="height: 20vh; width: 20vh;" class="col-sm-4"><img src="{{ asset('img') }}/{{ $cart['photo'] }}" width="100%" height="100%" class="img-responsive" /></div>
-                    <div class="col-sm-8 center">
+                    <div style="height: 22vh; width: 22vh;" class="col-lg-4 col-md-6 col-8"><img src="{{ url('images/'.$cart['photo']) }}"" width="80%" height="100%" class="img-responsive" /></div>
+                    <div class="col-lg-6 col-md-6 col-4 center">
                         <h4>{{ $cart['product_name'] }}</h4>
                     </div>
                 </div>

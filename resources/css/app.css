@@ -80,8 +80,8 @@ a:hover {
 
   .add {
     border: 0.3vh blue solid;
-    padding: 1vh;
-    border-radius: 5%;
+    padding: 0.4vh;
+    border-radius: 10%;
   }
 
   .add:hover {
@@ -89,3 +89,38 @@ a:hover {
     color: rgb(255, 255, 255);
   }
     
+  .block {
+    width: 80%;
+    height: auto;
+    padding: 4vh;
+    margin-left: 10%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .product {
+    background-color: rgb(255, 255, 255);
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .grid {
+    padding: 2vh;
+  }
+
+  .image {
+    height: 26vh;
+    width: 65%;
+  }
+
+  .imageslider {
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+  }
