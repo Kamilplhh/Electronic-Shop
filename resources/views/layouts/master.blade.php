@@ -15,10 +15,10 @@
         </div>
         <div class="navbar-content">
             <input id="searchbar" type="text" placeholder="Search products"></input>
-            <div class="dropdown"><a href="categories"><i class="fa-solid fa-bars fa-xl"></i></a>
+            <div class="dropdown"><a href="/categories"><i class="fa-solid fa-bars fa-xl"></i></a>
                 <div class="dropdown-content">
                     @foreach($categories as $category)
-                    <a href="categories/ {{ $category->id }}">{{ $category->name }}</a><br>
+                    <a href="/{{ $category->id }}">{{ $category->name }}</a><br>
                     @endforeach
                 </div>
             </div>

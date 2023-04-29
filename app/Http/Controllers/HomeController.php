@@ -16,15 +16,22 @@ class HomeController extends Controller
         return view('home', compact(['categories', 'products']));
     }
    
-    public function cart()
-    {
+    public function Contact() {
+        
+        $categories = Category::All();
+        
+        return view('contact', compact('categories'));
+    }
+
+    public function cart() {
+
         $categories = Category::All();
 
         return view('cart', compact('categories'));
     }
 
-    public function addToCart($id)
-    {
+    public function addToCart($id) {
+
         $product = Product::findOrFail($id);
  
         $cart = session()->get('cart', []);
@@ -44,8 +51,8 @@ class HomeController extends Controller
         return redirect()->back();
     }
  
-    public function remove(Request $request)
-    {
+    public function remove(Request $request) {
+
         if($request->id) {
             $cart = session()->get('cart');
             if(isset($cart[$request->id])) {
