@@ -1,0 +1,23 @@
+body{
+    overflow-x: hidden;
+}
+
+.row {
+    min-height: 75vh;
+}
+
+.category-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 50vh;
+    width: 60vh;
+    margin: 4vh 2vh;
+}
+
+.image-block {
+    height: auto;
+    width: 40vh;
+}
