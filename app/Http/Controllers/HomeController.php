@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\event;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -12,17 +13,11 @@ class HomeController extends Controller
         
         $categories = Category::All();
         $products = Product::take(20)->get();
+        $sliders = Event::All();
         
-        return view('home', compact(['categories', 'products']));
+        return view('home', compact(['categories', 'products', 'sliders']));
     }
    
-    public function Contact() {
-        
-        $categories = Category::All();
-        
-        return view('contact', compact('categories'));
-    }
-
     public function cart() {
 
         $categories = Category::All();

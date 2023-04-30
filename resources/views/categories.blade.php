@@ -4,9 +4,9 @@
 @section('content')
     @foreach($products as $product)
     <a href="/product/{{ $product->id }}">
-        {{ $product->src }}
+        <img src="{{ url('images/'.$product->src) }}"/>
         {{ $product->name }}
-        {{ $product->price }}
+        {{ $product->price }} $
     </a>
     @endforeach
 @stop

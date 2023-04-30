@@ -11,7 +11,7 @@ a:hover {
 }
 
 .navbar {
-    background-color: rgb(232, 238, 247);
+    background-color: rgb(245, 245, 247);
     height: 10vh;
     width: 100%;
     color: rgb(75, 75, 75);
@@ -45,11 +45,11 @@ a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(232, 238, 247);
-    top: 1vh;
+    background-color: rgb(245, 245, 247);
+    top: 1.2vh;
     left: -4vh;
     min-width: 8vw;
-    box-shadow: 0px 4px 12px 0px rgb(232, 238, 247);
+    box-shadow: 0px 4px 12px 0px rgb(0, 0, 0);
     border-radius: 1vh;
     padding: 1vh 1vw;
     z-index: 1;
@@ -120,7 +120,52 @@ a:hover {
   }
 
   .imageslider {
+    border-bottom: 0.2vh solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     height: 60vh;
     width: 100%;
-    background-color: black;
+    background-color: rgb(245, 245, 247);
+  }
+
+  .footer {
+    border-top: 0.2vh solid black;
+    width: 100%;
+    margin-top: 10vh,;
+    height: 15vh;
+    background-color: rgb(245, 245, 247);
+    text-align: center;
+  }
+
+
+  .slider {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 60vw;
+    height: 100%;
+  }
+  
+  .img-container {
+    height: 100%;
+    display: flex;
+    transition: transform 300ms ease-in-out;
+  }
+  
+  .previous {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 10vw;
+  }
+  
+  .next {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 10vw;
   }

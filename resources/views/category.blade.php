@@ -3,7 +3,8 @@
 
 @section('content')
     @foreach($categories as $category)
-        {{ $category->src }}
-        <a href="{{ $category->id }}">{{ $category->name }}</a> 
+        <a href="{{ $category->id }}">
+        <img src="{{ url('images/'.$category->src) }}"/>
+        {{ $category->name }}</a> 
     @endforeach
 @stop

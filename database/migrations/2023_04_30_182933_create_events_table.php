@@ -11,14 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('cpus', function (Blueprint $table) {
+        Schema::create('events', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->integer('cores');
-            $table->integer('threads')->nullable();
-            $table->string('clock');
-            $table->string('boost_clock')->nullable();
-            $table->string('cache_memory');
+            $table->string('src');
         });
     }
 
@@ -27,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('cpus');
+        Schema::dropIfExists('events');
     }
 };

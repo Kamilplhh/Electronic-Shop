@@ -3,9 +3,9 @@
 
 @section('content')
 @foreach($products as $product) 
-    {{ $product->src }}
+    <img src="{{ url('images/'.$product->src) }}"/>
     {{ $product->name }}
-    {{ $product->price }}
+    {{ $product->price }} $
     {{ $product->category->name }}<br>
     <a href="{{ route('add_to_cart', $product->id) }}" class="add" role="button">Add to cart</a>
 @endforeach

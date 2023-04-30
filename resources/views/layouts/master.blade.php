@@ -33,6 +33,12 @@
     @yield('content')
 
     </div>
+    <div class="footer">
+        It's just prototype web, might be a bit buggy. <br>
+        My contact links are here: <br>
+        <i class="fa-solid fa-envelope fa-xl" style="padding-top: 2vh"></i> kamilczekotas@gmail.com<br>
+        <a href="https://github.com/Kamilplhh" target="_blank"><i class="fa-brands fa-github fa-xl" style="padding-top: 2vh"></i> Github</a>
+    </div>
 </body>
 
 </html>
