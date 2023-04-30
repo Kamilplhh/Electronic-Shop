@@ -3,7 +3,7 @@
 @vite('resources/css/category.css')
 
 @section('content')
-<div class="row">
+<div class="row justify-content-md-center">
     @foreach($products as $product)
     <div class="col-xl-6 col-md-12 col-12">
         <div class="category-block">

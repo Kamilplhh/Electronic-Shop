@@ -1,0 +1,56 @@
+.product-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 70%;
+    margin-left: 15%;
+    height: 100vh;
+    border-left: 0.2vh solid black;
+    border-right: 0.2vh solid black;
+    padding-top: 4vh;
+}
+
+.img-block {
+    height: 35vh;
+}
+
+.name-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.description {
+    height: auto;
+    margin-top: 2vh;
+}
+
+.buttons {
+    margin: 2vh;
+    display: flex;
+    padding: 2vh;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.add {
+    margin: 0 0.2vh;
+}
+
+.product-table {
+    width: 70%;
+}
+
+table, td {
+    border: 0.1vh solid black;
+    text-align: center;
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh;
+}

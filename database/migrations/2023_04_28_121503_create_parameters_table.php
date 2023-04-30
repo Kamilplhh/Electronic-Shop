@@ -17,8 +17,8 @@ return new class extends Migration
             $table->integer('hz')->nullable();
             $table->string('ram')->nullable();
             $table->string('storage')->nullable();
-            $table->string('front-camera')->nullable();
-            $table->string('back-camera')->nullable();      
+            $table->string('front_camera')->nullable();
+            $table->string('back_camera')->nullable();      
             $table->bigInteger('cpu_id')->nullable();
             $table->bigInteger('gpu_id')->nullable();
         });
