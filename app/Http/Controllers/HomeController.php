@@ -10,12 +10,11 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function GetData() {
-        
-        $categories = Category::All();
+          
         $products = Product::take(20)->get();
         $sliders = Event::All();
         
-        return view('home', compact(['categories', 'products', 'sliders']));
+        return view('home', compact(['products', 'sliders']));
     }
    
     public function cart() {
@@ -23,13 +22,6 @@ class HomeController extends Controller
         $categories = Category::All();
 
         return view('cart', compact('categories'));
-    }
-
-    public function profile() {
-
-        $categories = Category::All();
-        
-        return view('profile', compact(['categories']));
     }
 
     public function addToCart($id) {
