@@ -29,8 +29,8 @@
     
 
     <table class="product-table">
-        <tr>
-            <td>
+        <tr class="second">
+            <td class="category">
                 Resolution
             </td>
             <td>
@@ -38,15 +38,15 @@
             </td>
         </tr>
         <tr>
-            <td>      
+            <td class="category">      
                 Refresh rate
             </td>
             <td>
                 {{ $product->parameter->hz }} hz
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr class="second">
+            <td class="category">
                 RAM
             </td>
             <td>
@@ -54,15 +54,15 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="category">
                 Storage
             </td>
             <td>
                 {{ $product->parameter->storage }}
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr class="second">
+            <td class="category">
                 Front facing camera
             </td>
             <td>
@@ -70,15 +70,15 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="category">
                 Back facing camera
             </td>
             <td>
                 {{ $product->parameter->back_camera }}
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr class="second">
+            <td class="category">
                 GPU name
             </td>
             <td>
@@ -86,15 +86,15 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="category">
                 GPU VRAM
             </td>
             <td>
                 {{ $product->parameter->gpu->vram }}
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr class="second">
+            <td class="category">
                 GPU clock
             </td>
             <td>
@@ -102,15 +102,15 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="category">
                 GPU boost clock
             </td>
             <td>
                 {{ $product->parameter->gpu->boost_clock }} MHz
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr class="second">
+            <td class="category">
                 CPU name
             </td>
             <td>
@@ -118,15 +118,15 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="category">
                 CPU cores
             </td>
             <td>
                 {{ $product->parameter->cpu->cores }}
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr class="second">
+            <td class="category">
                 CPU threads
             </td>
             <td>
@@ -134,15 +134,15 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="category">
                 CPU clock
             </td>
             <td>
                 {{ $product->parameter->cpu->clock }}
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr class="second">
+            <td class="category">
                 CPU boost clock
             </td>
             <td>
@@ -150,7 +150,7 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="category">
                 CPU cache memory
             </td>
             <td>
@@ -158,23 +158,6 @@
             </td>
         </tr>
     </table>
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
- 
 </div>    
 @endforeach
 @stop

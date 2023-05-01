@@ -25,6 +25,13 @@ class HomeController extends Controller
         return view('cart', compact('categories'));
     }
 
+    public function profile() {
+
+        $categories = Category::All();
+        
+        return view('profile', compact(['categories']));
+    }
+
     public function addToCart($id) {
 
         $product = Product::findOrFail($id);

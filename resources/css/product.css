@@ -7,10 +7,14 @@
     align-content: center;
     width: 70%;
     margin-left: 15%;
-    height: 100vh;
+    height: auto;
     border-left: 0.2vh solid black;
     border-right: 0.2vh solid black;
     padding-top: 4vh;
+}
+
+.product-showcase {
+    max-width: 50%;
 }
 
 .img-block {
@@ -49,8 +53,16 @@
 }
 
 table, td {
-    border: 0.1vh solid black;
-    text-align: center;
+    border-top: 0.1vh solid rgb(212, 210, 210);
+    border-bottom: 0.1vh solid rgb(212, 210, 210);
     padding-top: 0.3vh;
     padding-bottom: 0.3vh;
+}
+
+.category {
+    text-align: center;
+}
+
+.second {
+    background-color: rgba(212, 210, 210, 0.6);
 }

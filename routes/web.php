@@ -26,3 +26,9 @@ Route::get('categories', [CategoryController::class, 'GetCategories']);
 Route::get('/{id}', [CategoryController::class, 'GetSelected']);
 
 Route::get('/product/{id}', [ProductController::class, 'GetItem']);
+
+Route::get('/profile/{id}', [HomeController::class, 'Profile']);
+
+Route::get('/login', function () {
+    return view('login');
+});
