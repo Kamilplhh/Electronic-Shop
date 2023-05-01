@@ -24,7 +24,7 @@
                     <a href="/product/{{ $product->id }}"><img src="{{ url('images/'.$product->src) }}" alt="siema" width="100%" height="100%"></a>
                 </div>
                 <div class="product-desc">
-                    <a href="/product/{{ $product->category->id }}">
+                    <a href="/category/{{ $product->category->id }}">
                         {{ $product->category->name }}</a><br>
                     <a href="/product/{{ $product->id }}">
                         {{ $product->name }}</a><br>

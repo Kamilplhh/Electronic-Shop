@@ -23,11 +23,15 @@ Route::get('add-to-cart/{id}', [HomeController::class, 'addToCart'])->name('add_
 Route::delete('/remove-from-cart/{id}', [HomeController::class, 'remove'])->name('remove_from_cart');
 
 Route::get('categories', [CategoryController::class, 'GetCategories']);
-Route::get('/{id}', [CategoryController::class, 'GetSelected']);
+Route::get('/category/{id}', [CategoryController::class, 'GetSelected']);
 
 Route::get('/product/{id}', [ProductController::class, 'GetItem']);
 
 Route::get('/profile/{id}', [HomeController::class, 'Profile']);
+
+Route::get('/profile/{id}', function () {
+    return view('profile');
+});
 
 Route::get('/login', function () {
     return view('login');

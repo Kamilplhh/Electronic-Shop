@@ -1,0 +1,30 @@
+.content {
+    min-height: 75vh;
+    width: 60vw;
+    margin-left: 20vw;
+    display: flex;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.wishlist {
+    margin-top: 2vh;
+    width: 100%;
+    height: auto;
+    min-height: 30vh;
+}
+
+.product-profile {
+    padding: 2vh;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: wrap !important;
+    flex-wrap: wrap;
+}
+
+.product-image {
+    height: 20vh;
+}
