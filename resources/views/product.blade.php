@@ -24,7 +24,9 @@
 
     <div class="buttons">
         <a href="{{ route('add_to_cart', $product->id) }}" class="add" role="button">Add to cart</a>
-        <a class="add" role="button">Add to wishlist</a>
+        @auth
+        <a href="{{ route('addobject', $product->id) }}" class="add" role="button">Add to wishlist</a>
+        @endauth
     </div>
     
 

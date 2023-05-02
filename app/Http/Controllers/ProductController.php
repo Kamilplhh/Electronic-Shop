@@ -10,9 +10,8 @@ class ProductController extends Controller
 {
     public function GetItem($id) {
         
-        $categories = Category::All();
         $products = Product::where('id', $id)->get();
 
-        return view('product', compact(['categories', 'products']));
+        return view('product', compact(['products']));
     }
 }

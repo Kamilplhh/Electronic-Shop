@@ -3,6 +3,8 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\WishlistController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,12 +29,12 @@ Route::get('/category/{id}', [CategoryController::class, 'GetSelected']);
 
 Route::get('/product/{id}', [ProductController::class, 'GetItem']);
 
-Route::get('/profile/{id}', [HomeController::class, 'Profile']);
+Route::get('/profile/{id}', [AuthController::class, 'Profile']);
 
-Route::get('/profile/{id}', function () {
-    return view('profile');
-});
+Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::post('custom-login', [AuthController::class, 'customLogin'])->name('login.custom'); 
+Route::post('custom-registration', [AuthController::class, 'customRegistration'])->name('register.custom'); 
+Route::get('signout', [AuthController::class, 'signOut'])->name('signout');
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('addobject/{id}', [WishlistController::class, 'AddObject'])->name('addobject');
+Route::get('/deleteobject/{id}', [WishlistController::class, 'DeleteObject'])->name('DeleteObject');

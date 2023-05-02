@@ -21,7 +21,9 @@
             <a href="{{ route('cart') }}"><i class="fa-solid fa-cart-shopping fa-xl icon"> {{ count((array) session('cart')) }}</i></a>
 
             @auth
-                <a href="/profile/1">
+            <a href="{{ route('signout') }}">
+                <i class="fa-solid fa-right-from-bracket fa-xl"></i></a>
+            <a href="/profile/{{ auth()->user()->id}}">
             @else
                 <a href="/login">
             @endauth

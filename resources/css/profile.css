@@ -10,10 +10,10 @@
 }
 
 .wishlist {
-    margin-top: 2vh;
     width: 100%;
     height: auto;
     min-height: 30vh;
+    margin-top: 10vh;
 }
 
 .product-profile {
